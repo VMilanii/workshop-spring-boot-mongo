@@ -22,9 +22,9 @@ public class Instantiantion  implements CommandLineRunner{
 		userReposiroty.deleteAll();
 		
 		
-		User maria = new User(null, "Maria Brown", "maria@gmail.com");
-		User alex = new User(null, "alex green", "alex@gmail.com");
-		User bob = new User(null, "Bob Grey", "bob@gmail.com");
+		User maria = new User("maria@gmail.com", "Maria Brown",null );
+		User alex = new User("alex@gmail.com", "alex green", null );
+		User bob = new User("bob@gmail.com", "Bob Grey", null);
 		
 		userReposiroty.saveAll(Arrays.asList(maria, alex, bob));
 		
